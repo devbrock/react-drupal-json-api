@@ -11,7 +11,7 @@
 ### NPM
 
 ```sh
-NPM install react-drupal-json-api
+npm install react-drupal-json-api
 ```
 
 ### Yarn
