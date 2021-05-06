@@ -8,13 +8,13 @@
 
 ## Install
 
-Using NPM
+### NPM
 
 ```sh
 NPM install react-drupal-json-api
 ```
 
-Using Yarn
+### Yarn
 
 ```sh
 yarn add react-drupal-json-api
@@ -33,6 +33,10 @@ let articlesData = await useDrupalJSONAPI({
   sort: "created",
 });
 ```
+
+## Issues
+
+Please report all bugs, issues, and feature requests [here](https://github.com/devbrock/react-drupal-json-api/issues).
 
 ## Author
 
