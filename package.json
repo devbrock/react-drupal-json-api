@@ -1,6 +1,6 @@
 {
   "name": "react-drupal-json-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package of React.js hook(s) to easily fetch data from a headless Drupal instance using the Drupal JSON API module.",
   "main": "index.js",
   "scripts": {
