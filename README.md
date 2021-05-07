@@ -27,12 +27,20 @@ import { useDrupalJSONAPI } from "react-drupal-json-api";
 
 let articlesData = await useDrupalJSONAPI({
   baseURL: "www.example.com",
-  apiBase: "api", //optional: defaults to jsonapi
   collection: "article",
-  include: ["field_image"],
-  sort: "created",
+  include: ["field_image", "uid"],
+  sort: "title",
 });
 ```
+
+### Options
+
+| Key        | Description                                                                                                                                                               | Required |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| baseURL    | The address of your decoupled Drupal instance.                                                                                                                            | **Yes**  |
+| collection | The collection name of the resources you would like to request. (article, post, person, etc.)                                                                             | **Yes**  |
+| include    | The names of the relationship fields you would like to include.                                                                                                           | No       |
+| sort       | The field (and direction) you would like your data sorted by. (i.e. "title" would sort alphabetically by title while "-created" would sort reversely by date of creation) | No       |
 
 ## Issues
 
